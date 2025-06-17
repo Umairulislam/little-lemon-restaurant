@@ -1,0 +1,107 @@
+$primary: #f4ce14;
+$secondary: #495e57;
+$tertiary: #edefee;
+
+$spacers: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 1rem,
+  4: 1.5rem,
+  5: 3rem,
+  6: 4rem,
+  7: 15rem,
+);
+
+$font-sizes: map-merge(
+  (
+    7: 0.75rem,
+  ),
+  ()
+);
+
+@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  --primary-color: #f4ce14;
+  --secondary-color: #495e57;
+  --tertiary-color: #edefee;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+.social_icons i {
+  font-size: 24px;
+  transition: all 0.2s ease-in;
+}
+.social_icons a:hover {
+  scale: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: $secondary;
+  font-weight: 600;
+}
+a:hover {
+  color: $primary;
+}
+
+.menubar_position {
+  position: absolute;
+  top: 50px;
+  right: 35px;
+}
+
+.mario_position {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.adrian_position {
+  position: absolute;
+  top: 32%;
+  right: 20%;
+  height: 300px;
+  width: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .mario_position {
+    top: 88%;
+    right: 10%;
+    height: 250px;
+    width: 180px;
+  }
+
+  .adrian_position {
+    top: 96%;
+    right: 40%;
+    height: 250px;
+    width: 180px;
+  }
+}
