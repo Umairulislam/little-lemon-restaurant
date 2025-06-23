@@ -13,7 +13,7 @@ const Header = () => {
       </div>
       {openMenu ? (
         <ul className="d-none d-lg-flex justify-content-evenly gap-4 fs-6">
-          <a href="">
+          <a href="/">
             <li>Home</li>
           </a>
           <a href="">
@@ -22,7 +22,7 @@ const Header = () => {
           <a href="">
             <li>Menu</li>
           </a>
-          <a href="">
+          <a href="/reservation">
             <li>Reservations</li>
           </a>
           <a href="">
@@ -33,8 +33,8 @@ const Header = () => {
           </a>
         </ul>
       ) : (
-        <ul className="d-flex flex-column gap-3 d-lg-none shadow-sm p-4 menubar_position ">
-          <a href="">
+        <ul className="d-flex flex-column gap-3 d-lg-none shadow-lg p-4 menubar_position ">
+          <a href="/">
             <li>Home</li>
           </a>
           <a href="">
@@ -43,7 +43,7 @@ const Header = () => {
           <a href="">
             <li>Menu</li>
           </a>
-          <a href="">
+          <a href="/reservation">
             <li>Reservations</li>
           </a>
           <a href="">

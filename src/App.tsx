@@ -1,23 +1,9 @@
-import {
-  Header,
-  Hero,
-  Highlights,
-  Testimonials,
-  About,
-  Footer,
-} from "./components"
+import { RouterProvider } from "react-router"
+
+import router from "./routes/routes"
 
 function App() {
-  return (
-    <main>
-      <Header />
-      <Hero />
-      <Highlights />
-      <Testimonials />
-      <About />
-      <Footer />
-    </main>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
