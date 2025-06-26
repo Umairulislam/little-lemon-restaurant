@@ -12,7 +12,7 @@ const Header = () => {
         <img src={LogoHeader} alt="logo" width={200} />
       </div>
       {openMenu ? (
-        <ul className="d-none d-lg-flex justify-content-evenly gap-4 fs-6">
+        <ul className="d-none d-lg-flex justify-content-evenly gap-4 fs-6 fw-bold">
           <a href="/">
             <li>Home</li>
           </a>

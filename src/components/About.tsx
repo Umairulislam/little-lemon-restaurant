@@ -2,9 +2,9 @@ import { MarioAdrian1, MarioAdrian2 } from "../assets"
 
 const About = () => {
   return (
-    <section className="py-5 text-secondary">
-      <div className="container col-xxl-8">
-        <div className="row flex-lg-row-reverse align-items-center g-5 py-5 position-relative">
+    <section className="py-5">
+      <div className="container">
+        <div className="row flex-lg-row-reverse align-items-center g-5 position-relative">
           <div className="col-lg-6 ">
             <img
               src={MarioAdrian1}

@@ -2,7 +2,7 @@ import { LogoFooter } from "../assets"
 
 const Footer = () => {
   return (
-    <section className="bg-secondary text-white py-5 fs-6 mt-7 mt-lg-0">
+    <section className="bg-dark text-white py-5 fs-6 mt-7 mt-md-0">
       <div className="container">
         <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-4">
           <div className="col mb-3">
@@ -74,22 +74,22 @@ const Footer = () => {
             <h5 className="text-primary fw-bold">Social Links</h5>
             <ul className="nav gap-2">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white ">
+                <a href="#" className="nav-link p-0">
                   <i className="bi bi-facebook"></i>
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white ">
+                <a href="#" className="nav-link p-0">
                   <i className="bi bi-instagram"></i>
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white ">
+                <a href="#" className="nav-link p-0">
                   <i className="bi bi-twitter-x"></i>
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-white ">
+                <a href="#" className="nav-link p-0">
                   <i className="bi bi-youtube"></i>
                 </a>
               </li>
