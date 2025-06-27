@@ -122,11 +122,14 @@ const BookingForm = () => {
                 className="btn btn-dark px-4 me-md-2 rounded-4"
               >
                 {loading ? (
-                  <span
-                    className="spinner-border spinner-border-sm"
-                    role="status"
-                    aria-hidden="true"
-                  ></span>
+                  <>
+                    <span
+                      className="spinner-grow spinner-grow-sm"
+                      aria-hidden="true"
+                      role="status"
+                    ></span>
+                    <span role="status"> Reserving...</span>
+                  </>
                 ) : (
                   "Reserve a Table"
                 )}
