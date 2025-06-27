@@ -61,7 +61,7 @@ const BookingForm = () => {
   }
 
   return (
-    <section className="py-5 bg-light">
+    <section className="py-6 bg-light">
       <div className="container">
         <div>
           <img
@@ -72,7 +72,7 @@ const BookingForm = () => {
           />
         </div>
         <div className="text-center mt-5">
-          <h1 className="text-dark">Book Your Table Now</h1>
+          <h3 className="text-black">Book Your Table Now</h3>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="booking_form mx-auto"
@@ -120,6 +120,7 @@ const BookingForm = () => {
               <button
                 type="submit"
                 className="btn btn-dark px-4 me-md-2 rounded-4"
+                disabled={loading}
               >
                 {loading ? (
                   <>
@@ -128,7 +129,7 @@ const BookingForm = () => {
                       aria-hidden="true"
                       role="status"
                     ></span>
-                    <span role="status"> Reserving...</span>
+                    <span role="status"> Reserving ...</span>
                   </>
                 ) : (
                   "Reserve a Table"

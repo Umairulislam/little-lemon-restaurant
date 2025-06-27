@@ -152,7 +152,7 @@ header li:hover {
   max-width: 100%;
 
   @media (min-width: 992px) {
-    max-width: 50%;
+    max-width: 60%;
   }
 }
 
@@ -165,13 +165,13 @@ header li:hover {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .booking_form input,
 .booking_form select {
   background-color: white;
-  border: 1px solid #ccc;
+  border: 1px solid $dark;
   color: $dark;
   border-radius: 5px;
   outline: none;
