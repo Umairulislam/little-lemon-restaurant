@@ -4,7 +4,19 @@ export const bookingSchema = z.object({
   name: z.string().min(2, "Name is required"),
   email: z.string().nonempty("Email is required").email("Invalid email format"),
   number: z.string().min(10, "Phone number is required"),
-  date: z.string().nonempty("Date is required"),
+  date: z
+    .string()
+    .nonempty("Date is required")
+    .refine(
+      (value) => {
+        const selectedDate = new Date(value)
+        const today = new Date()
+        return selectedDate.getTime() >= today.setHours(0, 0, 0, 0)
+      },
+      {
+        message: "Date must be today or in the future",
+      }
+    ),
   time: z
     .string()
     .nonempty("Time is required")
