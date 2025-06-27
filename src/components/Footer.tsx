@@ -2,18 +2,18 @@ import { LogoFooter } from "../assets"
 
 const Footer = () => {
   return (
-    <section className="bg-dark text-white py-5 fs-6 mt-7 mt-md-0">
+    <section className="bg-dark text-white py-6 fs-6">
       <div className="container">
         <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-4">
           <div className="col mb-3">
             <a
               href="/"
               className="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
-              aria-label="Bootstrap"
             >
-              <img src={LogoFooter} alt="Logo Footer" width="100" />
+              <img src={LogoFooter} alt="Logo Footer" width="120" />
             </a>
           </div>
+
           <div className="col mb-3">
             <h5 className="text-primary fw-bold">Quick Links</h5>
             <ul className="nav flex-column ">
@@ -49,6 +49,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
           <div className="col mb-3">
             <h5 className="text-primary fw-bold">Contact</h5>
             <ul className="nav flex-column">
@@ -70,26 +71,27 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col mb-3 social_icons">
+
+          <div className="col social_icons">
             <h5 className="text-primary fw-bold">Social Links</h5>
             <ul className="nav gap-2">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0">
+                <a href="#" className="">
                   <i className="bi bi-facebook"></i>
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0">
+                <a href="#" className="">
                   <i className="bi bi-instagram"></i>
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0">
+                <a href="#" className="">
                   <i className="bi bi-twitter-x"></i>
                 </a>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0">
+                <a href="#" className="">
                   <i className="bi bi-youtube"></i>
                 </a>
               </li>

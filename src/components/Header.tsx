@@ -7,12 +7,12 @@ const Header = () => {
   const toggleMenu = () => setOpenMenu(!openMenu)
 
   return (
-    <nav className="d-flex container py-4 justify-content-start justify-content-lg-between align-items-center gap-10">
+    <header className="d-flex container py-4 justify-content-start justify-content-lg-between align-items-center gap-10">
       <div>
-        <img src={LogoHeader} alt="logo" width={200} />
+        <img src={LogoHeader} alt="logo" width={220} />
       </div>
       {openMenu ? (
-        <ul className="d-none d-lg-flex justify-content-evenly gap-4 fs-6 fw-bold">
+        <ul className="d-none d-lg-flex justify-content-evenly gap-4 fs-5 fw-semibold">
           <a href="/">
             <li>Home</li>
           </a>
@@ -23,7 +23,7 @@ const Header = () => {
             <li>Menu</li>
           </a>
           <a href="/reservation">
-            <li>Reservations</li>
+            <li>Reservation</li>
           </a>
           <a href="">
             <li className="text-nowrap">Order Online</li>
@@ -60,7 +60,7 @@ const Header = () => {
       >
         {openMenu ? <AlignRight /> : <X />}
       </div>
-    </nav>
+    </header>
   )
 }
 

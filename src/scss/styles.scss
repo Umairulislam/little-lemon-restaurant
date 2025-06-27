@@ -2,6 +2,8 @@ $primary: #f4ce14;
 $dark: #495e57;
 $light: #edefee;
 $danger: #dc3545;
+$accent: #ee9972;
+$text-black: #333333;
 
 $spacers: (
   0: 0,
@@ -14,15 +16,21 @@ $spacers: (
   7: 15rem,
 );
 
-$font-sizes: map-merge(
-  (
-    7: 0.75rem,
-  ),
-  ()
-);
+// $font-sizes: map-merge(
+//   (
+//     7: 0.75rem,
+//   ),
+//   ()
+// );
 
 @import "bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap");
+
+// -------------------------
+// Base Styles and Reset
+// -------------------------
 
 * {
   margin: 0;
@@ -31,7 +39,7 @@ $font-sizes: map-merge(
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "karla", sans-serif;
   background-color: #ffffff;
 }
 
@@ -50,16 +58,43 @@ a:visited {
   color: inherit;
 }
 
-.social_icons a {
-  font-size: 24px;
-  transition: color 0.3s ease-in;
-  color: white;
+h1 {
+  font-family: "Markazi Text", serif;
+  font-size: 65px;
+  line-height: 30px;
+  font-weight: 900;
 }
-.social_icons a:hover {
-  color: $primary;
+h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 45px;
+  font-weight: 400;
+}
+h3 {
+  color: $text-black;
 }
 
-nav a:hover {
+@media (max-width: 768px) {
+  h1 {
+    font-size: 45px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+
+.social_icons li {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+}
+.social_icons li:hover {
+  transform: scale(1.2);
+}
+
+// Header
+header a {
+  color: $dark;
+}
+header a:hover {
   color: $primary;
 }
 
@@ -70,39 +105,44 @@ nav a:hover {
   background-color: white;
 }
 
+// About
 .mario_position {
   position: absolute;
-  top: 20%;
-  right: 5%;
+  top: -200px;
+  right: 100px;
   height: 300px;
   width: 250px;
   object-fit: cover;
-  overflow: hidden;
 }
 
 .adrian_position {
   position: absolute;
-  top: 32%;
-  right: 20%;
+  top: -100px;
+  right: 260px;
   height: 300px;
   width: 250px;
   object-fit: cover;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 992px) {
   .mario_position {
-    top: 88%;
-    right: 10%;
+    top: 0;
+    left: 25%;
     height: 250px;
     width: 180px;
   }
 
   .adrian_position {
-    top: 96%;
-    right: 40%;
+    top: 20%;
+    left: 0;
     height: 250px;
     width: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about_img_container {
+    height: 320px;
   }
 }
 

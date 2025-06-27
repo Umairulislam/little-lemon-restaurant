@@ -1,6 +1,7 @@
 export { default as LogoHeader } from "./images/logo-header.png"
 export { default as LogoFooter } from "./images/logo-footer.png"
 export { default as RestaurantFood } from "./images/restaurant-food.jpg"
+export { default as RestaurantFood1 } from "./images/restaurant-food1.png"
 export { default as GreekSalad } from "./images/greek-salad.jpg"
 export { default as LemonDessert } from "./images/lemon-dessert.jpg"
 export { default as Bruchetta } from "./images/bruchetta.jpg"
