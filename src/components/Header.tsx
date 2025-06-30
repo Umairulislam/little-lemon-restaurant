@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { LogoHeader } from "../assets"
 import { AlignRight, X } from "lucide-react"
+import { Link } from "react-router"
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(true)
@@ -13,45 +14,45 @@ const Header = () => {
       </div>
       {openMenu ? (
         <ul className="d-none d-lg-flex justify-content-evenly gap-4 fs-5 fw-semibold">
-          <a href="/">
+          <Link to="/">
             <li>Home</li>
-          </a>
-          <a href="">
+          </Link>
+          <a href="#about">
             <li>About</li>
           </a>
-          <a href="">
+          <a href="#menu">
             <li>Menu</li>
           </a>
-          <a href="/reservation">
+          <Link to="/reservation">
             <li>Reservation</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/order-online">
             <li className="text-nowrap">Order Online</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/login">
             <li>Login</li>
-          </a>
+          </Link>
         </ul>
       ) : (
         <ul className="d-flex flex-column gap-3 d-lg-none shadow-lg p-4 menubar_position ">
-          <a href="/">
+          <Link to="/">
             <li>Home</li>
-          </a>
-          <a href="">
+          </Link>
+          <a href="#about">
             <li>About</li>
           </a>
-          <a href="">
+          <a href="#menu">
             <li>Menu</li>
           </a>
-          <a href="/reservation">
+          <Link to="reservation">
             <li>Reservations</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/order-online">
             <li className="text-nowrap">Order Online</li>
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/login">
             <li>Login</li>
-          </a>
+          </Link>
         </ul>
       )}
       <div

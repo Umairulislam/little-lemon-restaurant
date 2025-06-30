@@ -2,7 +2,7 @@ import { MarioAdrian1, MarioAdrian2 } from "../assets"
 
 const About = () => {
   return (
-    <section className="py-6">
+    <section className="py-6" id="about">
       <div className="container">
         <div className="row flex-lg-row align-items-center g-2">
           <div className="col-lg-6">

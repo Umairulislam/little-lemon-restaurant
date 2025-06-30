@@ -6,11 +6,20 @@ import {
   Avatar3,
   Avatar4,
   Bruchetta,
+  CaesarSalad,
+  CapreseSalad,
+  ChocolateMouseDessert,
   GreekSalad,
   LemonDessert,
+  LemonTartDessert,
   PastaPrimavera,
+  QuinoaSalad,
+  StrawberryCheesecakeDessert,
+  ThaiChickenSalad,
+  TiramisuDessert,
 } from "../assets"
 
+// Highlights
 export const highligts: HighlightsCard[] = [
   {
     id: 1,
@@ -82,5 +91,92 @@ export const testimonials: TestimonialsCard[] = [
     name: "Brian Arthur",
     message:
       "'Savor Little Lemon's gastronomic delights—a culinary gem with impeccable service and a warm, inviting atmosphere.'",
+  },
+]
+
+// Order Online
+export const salad: HighlightsCard[] = [
+  {
+    id: 1,
+    image: CaesarSalad, // Search: "Caesar salad with croutons"
+    title: "Caesar Salad",
+    price: "$9.49",
+    description:
+      "Crisp romaine lettuce tossed with creamy Caesar dressing, garlic croutons, and shaved parmesan cheese. A timeless classic.",
+    order: "order a delivery",
+    icon: Bike,
+  },
+  {
+    id: 2,
+    image: QuinoaSalad, // Search: "quinoa salad bowl"
+    title: "Quinoa Power Salad",
+    price: "$11.25",
+    description:
+      "A hearty mix of tri-color quinoa, chickpeas, cucumber, cherry tomatoes, and avocado with lemon-tahini dressing.",
+    order: "order a delivery",
+    icon: Bike,
+  },
+  {
+    id: 3,
+    image: CapreseSalad, // Search: "caprese salad on plate"
+    title: "Caprese Salad",
+    price: "$8.95",
+    description:
+      "Fresh mozzarella, juicy tomatoes, and fragrant basil drizzled with balsamic glaze and olive oil.",
+    order: "order a delivery",
+    icon: Bike,
+  },
+  {
+    id: 4,
+    image: ThaiChickenSalad, // Search: "Thai chicken salad"
+    title: "Thai Chicken Salad",
+    price: "$12.75",
+    description:
+      "Grilled chicken on a bed of greens, with shredded carrots, bell peppers, peanuts, and spicy peanut dressing.",
+    order: "order a delivery",
+    icon: Bike,
+  },
+]
+
+export const dessert: HighlightsCard[] = [
+  {
+    id: 1,
+    image: ChocolateMouseDessert,
+    title: "Chocolate Mousse",
+    price: "$6.99",
+    description:
+      "A silky smooth chocolate mousse topped with whipped cream and chocolate shavings, perfect for chocolate lovers.",
+    order: "order a delivery",
+    icon: Bike,
+  },
+  {
+    id: 2,
+    image: StrawberryCheesecakeDessert,
+    title: "Strawberry Cheesecake",
+    price: "$7.49",
+    description:
+      "Creamy cheesecake with a buttery graham cracker crust and a sweet strawberry glaze.",
+    order: "order a delivery",
+    icon: Bike,
+  },
+  {
+    id: 3,
+    image: TiramisuDessert,
+    title: "Classic Tiramisu",
+    price: "$8.25",
+    description:
+      "Layers of espresso-soaked ladyfingers and mascarpone cream, dusted with cocoa powder for an Italian classic.",
+    order: "order a delivery",
+    icon: Bike,
+  },
+  {
+    id: 4,
+    image: LemonTartDessert,
+    title: "Lemon Tart",
+    price: "$6.50",
+    description:
+      "A zesty lemon custard tart with a crisp buttery crust, garnished with fresh berries.",
+    order: "order a delivery",
+    icon: Bike,
   },
 ]

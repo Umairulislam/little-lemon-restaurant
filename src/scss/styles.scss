@@ -28,11 +28,12 @@ $spacers: (
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "karla", sans-serif;
-  background-color: #ffffff;
+  // background-color: #ffffff;
 }
 
 ol,
@@ -74,6 +75,12 @@ h3 {
   }
 }
 
+.fixed_img {
+  height: 200px; /* Or whatever fixed height you prefer */
+  object-fit: cover;
+  width: 100%;
+}
+
 /* ===========================
    Header Section
 =========================== */
@@ -89,6 +96,7 @@ header li:hover {
   top: 50px;
   right: 35px;
   background-color: white;
+  z-index: 99;
 }
 
 /* ===========================

@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router"
-import { Home, HomeLayout, Reservation } from "../pages"
+import { Home, HomeLayout, Login, OrderOnline, Reservation } from "../pages"
 
 const router = createBrowserRouter([
   {
@@ -13,6 +13,14 @@ const router = createBrowserRouter([
       {
         path: "reservation",
         Component: Reservation,
+      },
+      {
+        path: "order-online",
+        Component: OrderOnline,
+      },
+      {
+        path: "login",
+        Component: Login,
       },
     ],
   },

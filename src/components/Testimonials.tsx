@@ -8,7 +8,7 @@ const Testimonials = () => {
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-2">
           {testimonials.map((item) => (
             <div className="col" key={item.id}>
-              <div className="card text-dark d-flex flex-col card-body gap-2 h-100">
+              <div className="card text-dark d-flex flex-col card-body gap-2 h-100 rounded-0">
                 <div className="d-flex">
                   <Star fill="#f4ce14" strokeWidth="0" />
                   <Star fill="#f4ce14" strokeWidth="0" />
